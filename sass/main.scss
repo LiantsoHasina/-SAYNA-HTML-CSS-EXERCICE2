@@ -1,0 +1,344 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Raleway:400,200,100,300,500,600,700,800,900');
+
+*, *::before, *::after{
+    // our default general setting
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Raleway, Arial, sans-serif;
+    
+    
+}
+body{
+    button{
+        width: 170px;
+        height: 40px;
+        border-radius: 2em;
+        border: none;
+        color: #FFFF;
+        font-weight: bold;
+        background-color: #3d9f96;
+        cursor: pointer;
+    }
+    header{
+        background-image: url("../assets/img/header_bg.jpg");
+        color: #FFFF;
+        nav{
+            #Sayna_hidden{
+                display: none;//hide the logo for small.css
+            }
+            border-bottom: 1px grey solid;
+            font-weight: bold;
+            padding-right: 5%;
+
+            ul{
+
+                text-align: center;
+                li{
+                    padding-top:10px ;
+                    padding-bottom: 10px;
+                    padding-left: 5%;
+                    
+
+                    //select only the first 2 of the li
+                    &:nth-child(-n+2){
+
+                        a{
+                            color: #FFFF;
+                            text-decoration: none;
+                        }  
+                    }
+                    
+                    
+
+                    .Sayna_logo{
+                        width: 250px;
+                        margin-top: 15px;
+                        
+                        
+                            
+                    }
+                  
+                    display: inline-flex;
+                    &:last-child{
+                        padding-left: 15%;
+                        a{
+                            color:#3d9f96;
+     
+                        }    
+                    }
+                    
+                }
+            }
+        }
+        .call_to_action{
+            font-weight: lighter;
+            text-align: center;
+            
+            .cta_content{
+                margin-left: 24%;
+                margin-right: 24%;
+            }
+            #cta_content_1{
+                font-size: 35px;
+                line-height: 30px;
+                margin-top: 25px;
+            }
+            #cta_content_2{
+                font-size: 18px;
+                line-height: 80px;
+                font-weight: bold;
+                color: #3d9f96;
+            }
+            #cta_content_3{
+                line-height: 30px;
+            }
+            button{
+                margin-top: 50px;
+                margin-bottom: 40px;
+                font-weight: bold;
+            }
+                img{
+                    width: 500px;
+                    height: 400px;   
+                }
+            
+        }
+        .social{
+            background-color:#f7f7f7;
+            // padding-left: 23%;
+            text-align: center;
+            
+            img{
+                padding: 20px;
+                margin-top: 20px;
+            }
+            p{
+                color:#3d9f96;
+                padding-bottom: 50px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+    main{
+        .app_presentation{
+            .check{
+               
+                text-align: center;
+            
+                .new_app{
+                    padding: 50px 0 30px 0;
+                    font-size: 20px;
+                }
+                .new_app_content{
+                    padding: 0 30% 0 30%
+                }
+            }
+        }
+        .awesomeness{
+            background-image: url("../assets/img/map_bg.png");
+            padding: 50px 5% 40px 15%;
+            ul{
+                display: inline-flex;
+                li{
+                    
+                    figure{
+                        
+                        img, figcaption{
+                            display:inline-flex;
+                            vertical-align: middle;
+                        }
+                        figcaption{
+                            line-height: 50px;
+                            font-size: 17px;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 20px;
+                            padding-left: 30%;
+                        }
+                    }
+                }
+                img{
+                    padding-left: 30%;
+                }
+                #awesome_2{
+                    text-align: right;
+                    figure{
+                        img{
+                            float: right;
+                            margin-top: 10px;
+                            padding-left: 20px;
+                        }
+                        figcaption{
+                            padding-left: 40%;
+                        }
+                        p{
+                            padding-left: 30%;
+                        }
+                    }
+                }
+            }
+        }
+        .quote{
+            background-image: url('../assets/img/seperator1-.jpg');
+            text-align: center;
+            padding: 5% 0 5% 0;
+            color:#FFFF;
+            #avatar{
+                margin-bottom: 10px;
+            }
+            p{
+                line-height: 30px;
+                margin: 0 32% 0 32%;
+            }
+            span{
+                color: #3d9f96;
+                line-height: 70px;
+                font-weight: bold;
+            }
+        }
+
+        // SCREENSHOTS
+        .shots{
+            // spacing problem .best and pics forced us to use grid to display them normally
+            background-color: #f7f7f7;
+            padding: 5% 0 0 25%;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-areas: 
+                "best"
+                "pics";
+                
+            // not forced to take the same name
+            .best{
+                grid-area: best;
+                padding-bottom: 5%;
+            
+            }
+            .pics{
+                grid-area: pics;
+                display: inline-flex;  
+                figure{
+                    line-height: 25px;
+                    // Selecting the last two figure for padding
+                    // The first one is already well placed, no need additional settings
+                    &:nth-child(n+2){
+                        padding-left: 8%;
+                    } 
+                    
+                    // We don't want our last figcaption to get bigger margin bottom
+                    // So, we select only the first two
+                    &:nth-child(-n+2){
+                        figcaption{
+                            margin-bottom: 20%;    
+                        }
+                            
+                    }
+                        
+                    
+                }
+            }
+            
+        }
+
+        // LITMUS TESTED
+        .details{
+            margin: 5% 20% 5% 25%;
+        
+            
+            .details_1{
+                display: inline-flex;
+                
+                div{
+                    margin-top: 20px;
+                    line-height: 30px;
+                    
+                    p{
+                        padding-bottom: 30px;
+                        span{
+                            font-size: 28px;      
+                        }
+                    }
+                }
+
+               
+            }
+            .details_2{
+                line-height: 25px;
+                
+              img{
+                  float: right;
+                  width: 52%;
+              }
+              div{
+                width: 50%;
+                div{
+                   height: 20px;
+               }
+               p{
+                  margin: 20px 0 20px 0;
+                  
+               }
+               .responsive{
+                   font-size: 20px;
+               }
+               
+              }
+            }
+        }
+
+    }
+    footer{
+        .responsive_footer{
+            
+            display: none;//hide the small.css 's footer
+        }
+        .about_us{
+            background-color: #f7f7f7;
+            margin-bottom: 30px;
+            padding-left: 15%;
+            table{
+                padding-top: 30px;
+                line-height: 35px;
+                tr{
+                   th{
+                       width: 33.33%;
+                       text-transform: uppercase;
+                   }
+                   td{
+                       ul{
+                          padding-left: 40%;
+                       }
+                   }
+                }
+              
+            }
+        }
+        .foot{
+            
+            margin-left: 15%;
+            display: flex;
+            
+            p{
+                margin-bottom: 30px;    
+            }
+            div{
+                display: inline-block;
+                margin-left: 30%;
+    
+                img{
+                    
+                    padding-left: 20px;
+                    
+                }
+            }
+            
+        }
+    }
+
+    
+}

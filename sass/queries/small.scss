@@ -1,0 +1,269 @@
+@media (max-width:768px) {
+    *{
+        overflow-x: hidden;//keeps the screen from being scrollable horizontally
+        font-family: Helvetica, Arial, sans-serif, 'Raleway';
+    }
+    body{
+        button{
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        
+        header{
+            nav{
+                // we removed the entire ul to make place for #Sayna_hidden
+                ul{
+                    display: none;
+                }
+                #Sayna_hidden{
+                    display: block;
+                    img{
+                        width: 300px;
+                        margin: 30px 30%;
+                    }
+                }
+            }
+            .call_to_action{
+                .cta_content{
+                    #cta_content_1{
+                        font-size: 29px;
+                        overflow-y: hidden;
+                        strong{
+                            font-weight: lighter;
+                        }
+                    }
+                    #cta_content_2{
+                        font-weight: lighter;
+                        
+                    }
+                    #cta_content_3{
+                        line-height: 25px;
+                    }
+                    img{
+                        width: 300px;
+                        height: 100px;
+                    }
+                }
+            }
+            .social{
+                padding:0 0 25px 0;
+                img{
+                    padding: 2.5%;
+                }
+                p{
+                    display: none;//"social media option" removed
+                }
+            }
+
+        }
+
+        main{
+            .app_presentation{
+                .check{
+                    .new_app_content{
+                        padding: 0 24% 0 24%;
+                    }
+                }
+                .awesomeness{
+                    // now, only #iphone have the map_bg.png
+                    //#awesome_2 won't float right anymore
+                    background-image: none;
+                    padding-left: 0;
+
+                    ul{
+                        display: block;
+                        li{
+                            align-items: center;
+                            
+                            figure{
+                                padding-left: 13%;
+                                p{
+                                    padding-left: 20%;
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                        #iphone{
+                           
+                            img{
+                                background-image: url("assets/map_bg.png");//copied it to small.css's location
+                                padding: 0 50% 0 40%;
+                            }
+                        }
+                        #awesome_2{
+                            text-align: start;
+                            
+                            figure{
+                                
+                                img, figcaption{
+                                    padding-left: 30%;
+                                }
+                                img{
+                                    float: none;
+                                    padding-bottom: 12px;
+                                }
+                                figcaption{
+                                    padding-left: 0;
+                                }
+                                p{
+                                    padding-left: 20%;
+                                    
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .quote{
+                p{
+                    line-height: 25px;
+                    margin: 0 30% 0 30%;    
+                }
+                span{
+                    font-weight: lighter;
+                }
+            }
+
+            .shots{
+                padding-left: 0;
+                padding-top: 5%;
+                text-align: center;
+                display: block;
+                .best{
+                    font-size: 23px;
+                }
+                .pics{
+                    display: grid;
+                    figure{
+                        line-height: 25px;
+                        margin-bottom: 20px;
+                        &:nth-child(n+2){
+                            padding-left: 0;
+                            margin-top: -20%;
+                        
+                        }
+                        img{
+                            width: 25%;
+                        }
+                        figcaption{
+                            font-size: 14px;
+                            
+                        }
+                    }
+                }
+                
+
+                
+            }
+            .details{
+                margin: 5% 23% 5% 23%;
+                .details_1, .details_2{
+                    display: block;
+                    text-align: center;
+                }
+                .details_1{
+                    img{
+                        width: 100%;
+                    }
+                    div{
+                        p{
+                            line-height: 25px;
+                            
+                            span{
+                                font-size: 25px;
+                            }
+                        }
+                        button{
+                            margin: 50px 0 50px 0;
+                        }
+                    }
+                }
+                .details_2{
+                    #layer{
+                        width: 80%;
+                    }
+                    div{
+                        width: 100%;
+                       .responsive{
+                           font-size: 25px;
+                            padding-bottom: 50px;
+                       }
+                       p{
+                            
+                            margin: 0 5% 0 5%;
+                           
+                       }
+                       button{
+                           margin: 70px 0 70px 0;
+                       }
+                    }
+                    
+                }
+                
+
+                
+
+            }
+
+        }
+        footer{
+            h2{
+                text-transform: uppercase;
+                font-size: 25px;
+                margin: 10% 0 5% 0;
+                overflow-y: hidden;//A minor size problem...fixed
+
+            }
+            .about_us{
+                display: none;//removing the first part of footer
+            }
+            .responsive_footer{
+                
+                font-size: 14px;
+                line-height: 25px;
+                padding: 0 25% 0 25%;
+                display: block;
+                text-align: center;
+                background-color: #f7f7f7;
+                .part_1{
+                    margin-top: 15%;
+                    img{
+                        width: 300px;
+                        height: 70px;
+                        margin-bottom: 3%;
+                    }
+                }
+               .part_3{
+                   padding-bottom: 20%;   
+               }
+            }
+            .foot{
+                text-align: center; 
+                padding-top: 5%;
+                display: block;
+                margin-left: 0;
+                div{
+                    display: inline-block;
+                    margin-left: 8%;
+                    margin-bottom: 5%;
+                    
+                    img{
+                        
+                        width:60px;
+                        margin-right: 65px;    
+                        
+                    }
+                    
+                }
+                
+                
+            }
+
+        }
+    }
+    
+}
